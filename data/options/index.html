@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title data-i18n="optionsTitle"></title>
+  <style>
+    body {
+      padding: 10px;
+      font-family: "Helvetica Neue",Helvetica,sans-serif;
+      font-size: 13px;
+    }
+    textarea {
+      width: 100%;
+      display: block;
+      margin: 5px 0 15px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <p>
+    <span data-i18n="optionsCheckLabel"></span>
+    <div style="display: flex">
+      <input type="text" placeholder="e.g.: google-analytics.com" style="flex: 1; margin-right: 5px;">
+      <button data-i18n="optionsCheck" id="check"></button>
+    </div>
+  </p>
+  <span data-i18n="optionsBlacklist"></span>
+  <textarea id="blacklist" rows="5"></textarea>
+
+  <span data-i18n="optionsWhitelist"></span>
+  <textarea id="whitelist" rows="5"></textarea>
+
+  <div>
+    <button id="save" data-i18n="optionsSave"></button>
+    <span id="status"></span>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
