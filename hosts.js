@@ -41,7 +41,10 @@ var hosts = (() => {
           return url.substring(s);
         }
       }
-    } else return url;
+    }
+    else {
+      return url;
+    }
   }
 
   const tabs = {
@@ -58,7 +61,7 @@ var hosts = (() => {
     remove: {
       tab: id => delete tabs.cache[id]
     }
-  }
+  };
 })();
 
 // https://adaway.org/hosts.txt
@@ -82,4 +85,6 @@ fetch(url).then(res => res.blob())
     }).click();
 });
 
+---
+JSON.stringify(a.filter((s, i, l) => l.indexOf(s) === i).sort())
  */

@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "default_locale": "en",
   "name": "__MSG_appTitle__",
-  "version": "0.1.0",
+  "version": "0.1.1",
 
   "description": "__MSG_appDesc__",
 
@@ -30,15 +30,25 @@
   },
   "browser_action": {
     "default_icon": {
-      "16": "data/icons/16.png",
-      "32": "data/icons/32.png",
-      "48": "data/icons/48.png",
-      "64": "data/icons/64.png"
+      "16": "data/icons/disabled/16.png",
+      "32": "data/icons/disabled/32.png",
+      "48": "data/icons/disabled/48.png",
+      "64": "data/icons/disabled/64.png"
     }
   },
+  "content_scripts": [{
+    "run_at": "document_start",
+    "matches": ["*://*/*"],
+    "css": ["data//inject/hide.css"]
+  }],
   "options_ui": {
     "page": "/data/options/index.html",
     "chrome_style": true
   },
-  "homepage_url": "http://add0n.com/adhost.html"
+  "homepage_url": "http://add0n.com/adhost.html",
+  "applications": {
+    "gecko": {
+      "id": "{2deac55a-3ea8-453b-aac8-f85ff229bf44}"
+    }
+  }
 }
