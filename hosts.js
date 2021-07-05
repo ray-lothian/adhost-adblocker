@@ -1,9 +1,8 @@
 'use strict';
 
-var hosts = (() => {
+const hosts = (() => {
   let blacklist = new Set([]);
   let whitelist = new Set();
-
   function update() {
     fetch('/data/assets/hosts.json').then(r => r.json()).then(r => {
       blacklist = new Set(r);

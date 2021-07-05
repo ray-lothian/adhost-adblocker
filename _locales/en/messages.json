@@ -1,12 +1,9 @@
 {
-  "appTitle": {
-    "message": "adHost AdBlocker"
-  },
   "appDesc": {
-    "message": "An open-source ad-blocker that operates based on host filtering"
+    "message": "An open-source DNS-based ad-blocker that operates based on host filtering to block ads, malware, phishing hostnames"
   },
   "optionsTitle": {
-    "message": "adHost AdBlocker :: Options Page"
+    "message": "Host AdBlocker :: Options Page"
   },
   "optionsSave": {
     "message": "Save"
@@ -27,9 +24,9 @@
     "message": "This hostname is not being blocked"
   },
   "optionsBlacklist": {
-    "message": "Additional blacklist hosts: Comma separated list of additional hostnames to be blocked."
+    "message": "Additional blacklist hosts: Comma-separated list of additional hostnames to be blocked."
   },
   "optionsWhitelist": {
-    "message": "Whitelist domains: Comma separated list of top level hostnames that adHost AdBlocker is disabled on."
+    "message": "Whitelist domains: Comma-separated list of top level hostnames that Host AdBlocker is disabled on."
   }
 }
